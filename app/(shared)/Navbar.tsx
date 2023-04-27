@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
 import { socials } from "./data";
-import Ad1 from "/public/assets/ad-1.jpg";
 
 function Navbar(): JSX.Element {
   return (
@@ -29,8 +28,9 @@ function Navbar(): JSX.Element {
           <Image
             fill
             alt="advert-1"
-            placeholder="blur"
-            src={Ad1}
+            src={
+              "https://res.cloudinary.com/dndvdllpg/image/upload/v1682556558/gpt-blog/ad-1_dsak3t.jpg"
+            }
             sizes="(max-width: 480px) 100vw,
               (max-width: 768px) 75vw,
               (max-width: 1060px) 50vw,
