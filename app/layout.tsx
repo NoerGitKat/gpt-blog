@@ -1,6 +1,6 @@
 import { Open_Sans } from "next/font/google";
 import { ReactNode } from "react";
-import Navbar from "./(shared)/Navbar";
+import { Footer, Navbar } from "./(shared)";
 import "./globals.css";
 
 const openSans = Open_Sans({
@@ -18,6 +18,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className={openSans.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
