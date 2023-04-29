@@ -5,10 +5,10 @@ type Props = {
   trendingPosts: Array<Post>;
 };
 
-function Trending({ trendingPosts }: Props): JSX.Element {
+function TrendingSection({ trendingPosts }: Props): JSX.Element {
   return (
     <section className="mt-6">
-      <aside className="flex items-center gap-3 mb-4">
+      <header className="flex items-center gap-3 mb-4">
         <h3 className="bg-wh-900 py-2 px-8 text-wh-10 text-sm font-bold">
           TRENDING
         </h3>
@@ -16,7 +16,7 @@ function Trending({ trendingPosts }: Props): JSX.Element {
           Nunc enim lobortis quam risus et feugiat nibh eu ornare. Molestie sit
           nulla dolor diam turpis.
         </p>
-      </aside>
+      </header>
 
       {trendingPosts.length > 0 ? (
         <ul className="sm:grid gap-5 grid-cols-4 grid-rows-2 sm:h-[600px] my-3">
@@ -45,4 +45,4 @@ function Trending({ trendingPosts }: Props): JSX.Element {
   );
 }
 
-export default Trending;
+export default TrendingSection;

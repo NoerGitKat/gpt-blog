@@ -1,5 +1,5 @@
 import { Post } from "@prisma/client";
-import Card from "../(shared)/Card";
+import { Card } from "../(shared)";
 
 type TechProps = {
   techPosts: Array<Post>;
@@ -10,9 +10,9 @@ function TechSection({ techPosts = [] }: TechProps): JSX.Element {
     <section>
       <hr className="border-1" />
       <header className="flex items-center gap-3 my-8">
-        <h4 className="bg-accent-orange py-2 px-5 text-wh-900 text-sm font-bold">
+        <h3 className="bg-accent-orange py-2 px-5 text-wh-900 text-sm font-bold">
           HOT
-        </h4>
+        </h3>
         <p className="font-bold text-2xl">Latest news in Technology</p>
       </header>
 
