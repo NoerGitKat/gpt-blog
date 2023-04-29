@@ -1,4 +1,5 @@
 import { TechSection, TrendingSection } from "./(home)";
+import MoreSection from "./(home)/MoreSection";
 import TravelSection from "./(home)/TravelSection";
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
         <aside className="basis-3/4">
           <TechSection techPosts={[]} />
           <TravelSection travelPosts={[]} />
+          <MoreSection otherPosts={[]} />
         </aside>
       </section>
     </main>

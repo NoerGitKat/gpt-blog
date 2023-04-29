@@ -8,7 +8,7 @@ type TrendingCardProps = {
 
 function TrendingCard({
   className = "",
-  post,
+  post = {},
 }: TrendingCardProps): JSX.Element {
   return (
     <Link

@@ -1,11 +1,11 @@
 import { Post } from "@prisma/client";
 import { Card } from "../(shared)";
 
-type TechProps = {
+type TechSectionProps = {
   techPosts: Array<Post>;
 };
 
-function TechSection({ techPosts = [] }: TechProps): JSX.Element {
+function TechSection({ techPosts = [] }: TechSectionProps): JSX.Element {
   return (
     <section>
       <hr className="border-1" />

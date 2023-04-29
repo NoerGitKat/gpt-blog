@@ -1,11 +1,11 @@
 import { Post } from "@prisma/client";
 import { Card } from "app/(shared)";
 
-type Props = {
+type TravelSectionProps = {
   travelPosts: Array<Post>;
 };
 
-const TravelSection = ({ travelPosts }: Props) => {
+const TravelSection = ({ travelPosts = [] }: TravelSectionProps) => {
   return (
     <section className="mt-10">
       <hr className="border-1" />

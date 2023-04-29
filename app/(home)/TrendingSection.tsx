@@ -1,11 +1,11 @@
 import { Post } from "@prisma/client";
 import TrendingCard from "./TrendingCard";
 
-type Props = {
+type TrendingSectionProps = {
   trendingPosts: Array<Post>;
 };
 
-function TrendingSection({ trendingPosts }: Props): JSX.Element {
+function TrendingSection({ trendingPosts }: TrendingSectionProps): JSX.Element {
   return (
     <section className="mt-6">
       <header className="flex items-center gap-3 mb-4">
