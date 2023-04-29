@@ -3,7 +3,7 @@ function Footer(): JSX.Element {
     <footer className="bg-wh-900 text-wh-50 py-10 px-10">
       <section className="justify-between mx-auto gap-16 sm:flex">
         {/* FIRST COLUMN */}
-        <ul className="mt-16 basis-1/2 sm:mt-0">
+        <ul className="basis-1/2 sm:mt-0">
           <li>
             <h4 className="font-bold">GPT BLOG</h4>
           </li>
