@@ -5,7 +5,7 @@ type MoreSectionProps = {
   otherPosts: Array<Post>;
 };
 
-const MoreSection = ({ otherPosts = [] }: MoreSectionProps) => {
+function MoreSection({ otherPosts = [] }: MoreSectionProps) {
   return (
     <section className="pt-4 mb-16">
       <hr className="border-1" />
@@ -34,6 +34,6 @@ const MoreSection = ({ otherPosts = [] }: MoreSectionProps) => {
       )}
     </section>
   );
-};
+}
 
 export default MoreSection;

@@ -5,7 +5,7 @@ type TravelSectionProps = {
   travelPosts: Array<Post>;
 };
 
-const TravelSection = ({ travelPosts = [] }: TravelSectionProps) => {
+function TravelSection({ travelPosts = [] }: TravelSectionProps) {
   return (
     <section className="mt-10">
       <hr className="border-1" />
@@ -48,6 +48,6 @@ const TravelSection = ({ travelPosts = [] }: TravelSectionProps) => {
       )}
     </section>
   );
-};
+}
 
 export default TravelSection;
