@@ -7,8 +7,8 @@ function initPrisma(): PrismaClient {
     initializedPrisma = new PrismaClient();
   }
 
-  if (!(global as any).initializedPrisma) {
-    (global as any).initializedPrisma = new PrismaClient();
+  if (!(global as any).prisma) {
+    (global as any).prisma = new PrismaClient();
   }
 
   initializedPrisma = (global as any).prisma;
@@ -16,4 +16,4 @@ function initPrisma(): PrismaClient {
   return initializedPrisma;
 }
 
-export default initPrisma();
+export const prisma = initPrisma();
