@@ -1,3 +1,4 @@
+import { Post } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +9,7 @@ type TrendingCardProps = {
 
 function TrendingCard({
   className = "",
-  post = {},
+  post,
 }: TrendingCardProps): JSX.Element {
   return (
     <Link
@@ -19,7 +20,6 @@ function TrendingCard({
         <Image
           fill
           alt="tech"
-          placeholder="blur"
           src={post?.image}
           sizes="(max-width: 480px) 100vw,
                 (max-width: 768px) 75vw,

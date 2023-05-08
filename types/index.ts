@@ -1,4 +1,5 @@
 export type Post = {
+  id?: string;
   category: string;
   title: string;
   content: string;
