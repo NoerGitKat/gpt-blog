@@ -17,13 +17,16 @@ function MoreSection({ otherPosts = [] }: MoreSectionProps) {
         <p className="font-bold text-2xl">Other Posts</p>
       </header>
       {otherPosts.length > 0 ? (
-        <ul className="sm:grid grid-cols-2 gap-16">
+        <aside className="sm:grid grid-cols-2 gap-16">
           {otherPosts.map((post, index) => (
-            <li key={`post${index + 1}`}>
-              <Card imageHeight="h-80" className="mt-5 sm:mt-0" post={post} />
-            </li>
+            <Card
+              key={`post${index + 1}`}
+              imageHeight="h-80"
+              className="mt-5 sm:mt-0"
+              post={post}
+            />
           ))}
-        </ul>
+        </aside>
       ) : (
         <aside className="sm:grid grid-cols-2 gap-16">
           <div className="mt-5 sm:mt-0 bg-wh-500 h-80"></div>

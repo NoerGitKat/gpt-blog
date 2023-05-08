@@ -17,23 +17,22 @@ function TechSection({ techPosts = [] }: TechSectionProps): JSX.Element {
       </header>
 
       {techPosts.length > 0 ? (
-        <ul className="sm:grid grid-cols-2 grid-rows-3 gap-x-8 gap-y-8 my-5">
+        <aside className="sm:grid grid-cols-2 grid-rows-3 gap-x-8 gap-y-8 my-5">
           {techPosts.map((post, index) => (
-            <li key={`post${index + 1}`}>
-              <Card
-                className={`col-span-1 ${
-                  index === 0
-                    ? "row-span-3"
-                    : "row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
-                }`}
-                imageHeight={index === 0 ? "h-96" : "h-48"}
-                post={post}
-                isLongForm={index === 0}
-                isSmallCard={index !== 0}
-              />
-            </li>
+            <Card
+              key={`post${index + 1}`}
+              className={`col-span-1 ${
+                index === 0
+                  ? "row-span-3"
+                  : "row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
+              }`}
+              imageHeight={index === 0 ? "h-96" : "h-48"}
+              post={post}
+              isLongForm={index === 0}
+              isSmallCard={index !== 0}
+            />
           ))}
-        </ul>
+        </aside>
       ) : (
         <aside className="flex justify-between gap-3 my-3">
           <div className="basis-1/2 bg-wh-500 h-96"></div>
